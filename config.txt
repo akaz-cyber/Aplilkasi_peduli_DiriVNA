@@ -1,0 +1,4 @@
+NIK|NAMA LENGKAP
+12345|Agus
+4567|Banyu
+23|agus
