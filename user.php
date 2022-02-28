@@ -20,7 +20,7 @@ if(empty($_SESSION['nik'])){ ?>
   <meta name="author" content=""/>
   <title>Aplikasi Peduli Diri - User</title>
   <!--favicon-->
-  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="assets/images/icon.png" type="image/x-icon">
   <!-- simplebar CSS-->
   <link href="assets/plugins/simplebar/css/simplebar.css" rel="stylesheet"/>
   <!-- Bootstrap core CSS-->
@@ -49,7 +49,7 @@ if(empty($_SESSION['nik'])){ ?>
    <div id="sidebar-wrapper" data-simplebar="" data-simplebar-auto-hide="true">
      <div class="brand-logo">
       <a href="index.html">
-       <img src="assets/images/logo-icon.png" class="logo-icon" alt="logo icon">
+       <img src="assets/images/icon.png" class="logo-icon" alt="logo icon">
        <h5 class="logo-text">Peduli Diri</h5>
      </a>
 	 </div>
@@ -60,15 +60,23 @@ if(empty($_SESSION['nik'])){ ?>
           <i class="icon-home"></i> <span>Dashboard</span>
         </a>
       </li>
+      <br>
       <li>
         <a href="?url=catatan_perjalanan" class="waves-effect">
           <i class="icon-calendar"></i>
           <span>Catatan perjalanan</span>
         </a>
       </li>
+      <br>
       <li>
         <a href="?url=tulis_catatan" class="waves-effect">
           <i class="icon-plus  "></i> <span>Tulis Catatan</span>
+        </a>
+      </li>
+      <br>
+      <li>
+        <a href="logout.php" class="waves-effect">
+          <i class="icon-power  "></i> <span>Logout</span>
         </a>
       </li>
 
@@ -88,42 +96,7 @@ if(empty($_SESSION['nik'])){ ?>
     </li>
   </ul>
      
-  <ul class="navbar-nav align-items-center right-nav-link">
-    <li class="nav-item">
-      <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" data-toggle="dropdown" href="#">
-        <span class="user-profile"><img src="assets/images/avatars/avatar-17.png" class="img-circle" alt="user avatar"></span>
-      </a>
-      <ul class="dropdown-menu dropdown-menu-right">
-       <li class="dropdown-item user-details">
-        <a href="javaScript:void();">
-           <div class="media">
-             <div class="avatar"><img class="align-self-start mr-3" src="assets/images/avatars/avatar-17.png" alt="user avatar"></div>
-            <div class="media-body">
-            <h6 class="mt-2 user-title"> 
-            <?php
-           
-           if(!empty(@$_GET['url'])){
-               switch (@$_GET['url']) {
-               }
-           }else{
-              echo "<h5>".$_SESSION['nama_lengkap'],"</h5>";
-              echo "<h5>".$_SESSION['nik'],"</h5>";
-           }
-           
-           ?>
-            <!-- <p class="user-subtitle">mccoy@example.com</p> -->
-            </div>
-           </div>
-          </a>
-        </li>
-        <li class="dropdown-divider"></li>
-        <li class="dropdown-item"><i class="icon-wallet mr-2"></i> Account</li>
-        <li class="dropdown-divider"></li>
-        <li><a class="dropdown-item icon-power mr-2"  href="logout.php">  Logout</a></li>
-       
-      </ul>
-    </li>
-  </ul>
+
 </nav>
 </header>
 <!--End topbar header-->

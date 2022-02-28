@@ -10,7 +10,7 @@
   <meta name="author" content=""/>
   <title>Aplikasi Peduli Diri-Register </title>
   <!--favicon-->
-  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="assets/images/icon.png" type="image/x-icon">
   <!-- Bootstrap core CSS-->
   <link href="assets/css/bootstrap.min.css" rel="stylesheet"/>
   <!-- animate CSS-->
@@ -29,7 +29,7 @@
 		<div class="card-body">
 		 <div class="card-content p-2">
 		 	<div class="text-center">
-		 		<img src="assets/images/logo-icon.png">
+		 		<img src="assets/images/icon.png">
 		 	</div>
 		  <div class="card-title text-uppercase text-center py-3">Register - Aplikasi Peduli Diri </div>
 		    <form method="POST" action="process_register.php">
