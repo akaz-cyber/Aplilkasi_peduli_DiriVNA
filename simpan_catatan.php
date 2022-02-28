@@ -18,5 +18,5 @@ fclose($file);
 ?>
 <script text="text/javascript">
     alert('Data Catatan Tersimapan !!');
-    window.location.assign('user.php');
+    window.location.assign('user.php?url=catatan_perjalanan');
 </script>
