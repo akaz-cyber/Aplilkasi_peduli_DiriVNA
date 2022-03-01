@@ -9,28 +9,28 @@
 			    <div class="form-group row">
 				  <label for="basic-input" class="col-sm-3 col-form-label">Tanggal</label>
 				  <div class="col-sm-9">
-					<input name="tanggal" type="date" id="basic-input" class="form-control" placeholder="Masukan Tanggal">
+					<input name="tanggal" type="date" id="basic-input" class="form-control" placeholder="Masukan Tanggal" required>
 				  </div>
 				</div>
 				
                 <div class="form-group row">
 				  <label for="basic-input" class="col-sm-3 col-form-label">Jam</label>
 				  <div class="col-sm-9">
-					<input name="jam" type="time" id="basic-input" class="form-control" placeholder="Masukan Jam">
+					<input name="jam" type="time" id="basic-input" class="form-control" placeholder="Masukan Jam" required>
 				  </div>
 				</div>
 
                 <div class="form-group row">
 				  <label for="basic-input" class="col-sm-3 col-form-label">Lokasi</label>
 				  <div class="col-sm-9">
-					<input name="lokasi" type="text" id="basic-input" class="form-control" placeholder="Masukan Lokasi">
+					<input name="lokasi" type="text" id="basic-input" class="form-control" placeholder="Masukan Lokasi" required>
 				  </div>
 				</div>
 
                 <div class="form-group row">
 				  <label for="basic-input" class="col-sm-3 col-form-label">Suhu Tubuh</label>
 				  <div class="col-sm-9">
-					<input name="suhu" type="text" id="basic-input" class="form-control" placeholder="Masukan Suhu Tubuh">
+					<input name="suhu" type="text" id="basic-input" class="form-control" placeholder="Masukan Suhu Tubuh" require>
 				  </div>
 				</div>
 				

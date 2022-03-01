@@ -48,7 +48,6 @@ if(empty($_SESSION['nik'])){ ?>
   <!--Start sidebar-wrapper-->
    <div id="sidebar-wrapper" data-simplebar="" data-simplebar-auto-hide="true">
      <div class="brand-logo">
-      <a href="index.html">
        <img src="assets/images/icon.png" class="logo-icon" alt="logo icon">
        <h5 class="logo-text">Peduli Diri</h5>
      </a>
@@ -96,7 +95,7 @@ if(empty($_SESSION['nik'])){ ?>
     </li>
   </ul>
      
-
+    
 </nav>
 </header>
 <!--End topbar header-->
@@ -104,11 +103,11 @@ if(empty($_SESSION['nik'])){ ?>
 <div class="clearfix"></div>
 	
   <div class="content-wrapper">
-    <div class="container-fluid">
+    <div class="container-fluid\">
     <!-- Breadcrumb-->
     <div class="card">
     <div class="card-header">
-		    <h4>Aplikasi Peduli Diri</h4>
+		 <h4>Aplikasi Peduli Diri</h4>
      </div>
      </div>
     <!-- End Breadcrumb-->
