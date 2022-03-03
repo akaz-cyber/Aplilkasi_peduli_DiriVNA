@@ -74,6 +74,12 @@ if(empty($_SESSION['nik'])){ ?>
       </li>
       <br>
       <li>
+        <a href="?url=perjalanan_edit" class="waves-effect">
+          <i class="icon-note  "></i> <span>Edit Catatan</span>
+        </a>
+      </li>
+      <br>
+      <li>
         <a href="logout.php" class="waves-effect">
           <i class="icon-power  "></i> <span>Logout</span>
         </a>
@@ -125,6 +131,13 @@ if(empty($_SESSION['nik'])){ ?>
                        case 'catatan_perjalanan':
                         include'catatan_perjalanan.php';
                         break;
+
+                        case 'perjalanan_edit':
+                          include'perjalanan_edit.php';
+                          break;
+                          case 'edit_catatan':
+                            include'edit_catatan.php';
+                            break;
                    default:
                        echo "<h3>Halaman Tidak Ditemukan</h3>";
                        break;
