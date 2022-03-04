@@ -18,7 +18,7 @@ if(empty($_SESSION['nik'])){ ?>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
   <meta name="description" content=""/>
   <meta name="author" content=""/>
-  <title>Aplikasi Peduli Diri - User</title>
+  <title>Aplikasi Peduli Diri</title>
   <!--favicon-->
   <link rel="icon" href="assets/images/icon.png" type="image/x-icon">
   <!-- simplebar CSS-->
