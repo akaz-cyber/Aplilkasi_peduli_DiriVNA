@@ -135,9 +135,10 @@ if(empty($_SESSION['nik'])){ ?>
                         case 'perjalanan_edit':
                           include'perjalanan_edit.php';
                           break;
-                          case 'edit_catatan':
-                            include'edit_catatan.php';
-                            break;
+
+                        case 'edit_catatan':
+                          include'edit_catatan.php';
+                          break;
                    default:
                        echo "<h3>Halaman Tidak Ditemukan</h3>";
                        break;
