@@ -36,7 +36,7 @@
                 <div class="form-group row">
 				  <label for="basic-input" class="col-sm-3 col-form-label">Suhu Tubuh</label>
 				  <div class="col-sm-9">
-					<input value="<?= $a['6']; ?>" name="suhu" type="text" id="basic-input" class="form-control" placeholder="Masukan Suhu Tubuh" require>
+					<input value="<?= $a['6']; ?>" name="suhu" type="text" id="basic-input" class="form-control" placeholder="Masukan Suhu Tubuh" required>
 				  </div>
 				</div>
 				
