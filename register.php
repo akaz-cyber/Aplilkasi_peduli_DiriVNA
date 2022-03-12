@@ -31,7 +31,7 @@
 		 	<div class="text-center">
 		 		<img src="assets/images/icon.png">
 		 	</div>
-		  <div class="card-title text-uppercase text-center py-3">Register - Aplikasi Peduli Diri </div>
+		  <div class="card-title text-uppercase text-center py-3">Daftar - Catatan Perjalanan </div>
 		    <form method="POST" action="process_register.php">
 			  <div class="form-group">
 			   <div class="position-relative has-icon-right">

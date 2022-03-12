@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
   <meta name="description" content=""/>
   <meta name="author" content=""/>
-  <title>Aplikasi Peduli Diri </title>
+  <title>Aplikasi Peduli Diri - Login </title>
   <!--favicon-->
   <link rel="icon" href="assets/images/icon.png" type="image/x-icon">
   <!-- Bootstrap core CSS-->
@@ -31,7 +31,7 @@
 		 	<div class="text-center">
 		 		<img src="assets/images/icon.png">
 		 	</div>
-		  <div class="card-title text-uppercase text-center py-3">LOGIN-Aplikasi Peduli Diri</div>
+		  <div class="card-title text-uppercase text-center py-3">Masuk - Catatan Perjalanan</div>
 		    <form method="POST" action="process_login.php">
 			  <div class="form-group">
 			   <div class="position-relative has-icon-right">

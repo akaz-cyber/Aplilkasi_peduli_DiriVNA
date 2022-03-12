@@ -13,12 +13,12 @@ if(empty($_SESSION['nik'])){ ?>
 
 <!-- Mirrored from codervent.com/rocker/color-version/pages-blank-page.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 15 Nov 2019 12:20:59 GMT -->
 <head>
-  <meta charset="utf-8"/>
+<meta charset="utf-8"/>
   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
   <meta name="description" content=""/>
   <meta name="author" content=""/>
-  <title>Aplikasi Peduli Diri</title>
+  <title>Catatan Perjalanan</title>
   <!--favicon-->
   <link rel="icon" href="assets/images/icon.png" type="image/x-icon">
   <!-- simplebar CSS-->
@@ -49,6 +49,7 @@ if(empty($_SESSION['nik'])){ ?>
    <div id="sidebar-wrapper" data-simplebar="" data-simplebar-auto-hide="true">
      <div class="brand-logo">
        <img src="assets/images/icon.png" class="logo-icon" alt="logo icon">
+       <a href="user.php">
        <h5 class="logo-text">Peduli Diri</h5>
      </a>
 	 </div>
@@ -81,7 +82,7 @@ if(empty($_SESSION['nik'])){ ?>
       <br>
       <li>
         <a href="logout.php" class="waves-effect">
-          <i class="icon-power  "></i> <span>Logout</span>
+          <i class="icon-power  "></i> <span>Keluar</span>
         </a>
       </li>
 
@@ -109,18 +110,20 @@ if(empty($_SESSION['nik'])){ ?>
 <div class="clearfix"></div>
 	
   <div class="content-wrapper">
-    <div class="container-fluid\">
+    <div class="container-fluid">
     <!-- Breadcrumb-->
-    <div class="card">
-    <div class="card-header">
-		 <h4>Aplikasi Peduli Diri</h4>
-     </div>
-     </div>
+     
+
+	   
     <!-- End Breadcrumb-->
       <div class="row">
         <div class="col-lg-12">
-		  <div style="height:600px"> <!--Please remove the height before using this page-->
-		   <?php
+        <div style="height:600px"> <!--Please remove the height before using this page-->
+          <div class="card">
+           <div class="card-body">
+
+
+           <?php
            
            if(!empty(@$_GET['url'])){
                switch (@$_GET['url']) {
@@ -144,12 +147,14 @@ if(empty($_SESSION['nik'])){ ?>
                        break;
                }
            }else{
-               echo"Selamat Datang Di Aplikasi Peduli Diri,Dimana Aplikasi ini Digunakan Untuk Mencatat Riwayat Perjalanan";
-               echo "<br>Anda Login Sebagai : ";
-               echo "<h4>".$_SESSION['nama_lengkap'],"</h4>"; 
+            echo "<h4><center>Selamat Datang ".$_SESSION['nama_lengkap']. " Di Aplikasi Catatan Perjalanan"; 
+          
            }
            
            ?>
+           </div>
+          </div>
+		 
 		  </div>
         </div>
       </div>
@@ -166,7 +171,7 @@ if(empty($_SESSION['nik'])){ ?>
 	<footer class="footer">
       <div class="container">
         <div class="text-center">
-          Copyright © Aplikasi Peduli Diri / 2022-2021
+         Aplikasi Catatan Perjalanan / 2022-2021
         </div>
       </div>
     </footer>

@@ -1,3 +1,8 @@
+<h4 class="page-title">Catatan Perjalanan</h4>
+	<ol class="breadcrumb">
+	<li class="breadcrumb-item"><a href="user.php">Dashboard</a></li>
+	<li class="breadcrumb-item active" aria-current="page">Edit Catatan</li>
+</ol>
 <div class="row">
         <div class="col-lg-12">
           <div class="card">

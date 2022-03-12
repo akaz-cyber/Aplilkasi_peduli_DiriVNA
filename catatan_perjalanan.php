@@ -1,7 +1,12 @@
+<h4 class="page-title">Catatan Perjalanan</h4>
+	<ol class="breadcrumb">
+	<li class="breadcrumb-item"><a href="user.php">Dashboard</a></li>
+	<li class="breadcrumb-item active" aria-current="page">Catatan Perjalanan</li>
+</ol>
 <div class="row"> 
         <div class="col-lg-12">
           <div class="card">
-            <div class="card-header"><i class="fa fa-table"></i> Data Catatan</div>
+            <div class="card-header"><i class="fa fa-table"></i> Riwayat Catatan</div>
             <div class="card-body">
               <div class="table-responsive">
               <table id="example" class="table table-bordered">
