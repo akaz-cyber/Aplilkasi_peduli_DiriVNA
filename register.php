@@ -55,7 +55,7 @@
 			 <button type="submit" class="btn btn-primary shadow-primary btn-round btn-block waves-effect waves-light">Daftar</button>
 			  <div class="text-center pt-3">
                 <hr>
-				<p class="text-muted">Sudah Punya akun? <a href="index.php">Kembali ke Halaman Login </a></p>
+				<p class="text-muted">Sudah Punya akun? <a href="index.php">Kembali ke Halaman Masuk </a></p>
 			  </div>
 			 </form>
 		   </div>
