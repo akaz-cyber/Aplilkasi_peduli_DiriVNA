@@ -146,15 +146,52 @@ if(empty($_SESSION['nik'])){ ?>
                        echo "<h3>Halaman Tidak Ditemukan</h3>";
                        break;
                }
-           }else{
-            echo "<h4><center>Selamat Datang ".$_SESSION['nama_lengkap']. " Di Aplikasi Catatan Perjalanan"; 
-          
-           }
-           
-           ?>
+           }else{?>
+            <!-- echo "<h4><center>Selamat Datang ".$_SESSION['nama_lengkap']. " Di Aplikasi Catatan Perjalanan";  -->
+             <?php 
+             echo "<h4><center><img src='assets/images/icon.png' width='70' height='70'/>Selamat Datang ".$_SESSION['nama_lengkap']. " Di Aplikasi Catatan Perjalanan<img src='assets/images/icon.png' width='70' height='70'/>";
+             ?>  
+                 
+    
            </div>
           </div>
-		 
+          <!-- halaman utama Dashboard -->
+      <div class="row mt-3">
+        <div class="col-12 col-lg-12 col-xl-6">
+          <div class="card bg-pattern-primary">
+            <div class="card-body">
+              <div class="media">
+              <div class="media-body text-left">
+                <h4 class="text-white"></h4>
+                <a href="user.php?url=catatan_perjalanan"><center><span class="text-white"><h4 class="text-white">
+                Catatan Perjalanan</h4> </span></center>  
+              </div></a>
+              
+              <div class="align-self-center w-circle-icon rounded-circle bg-contrast">
+               <a href="user.php?url=catatan_perjalanan"><i class="icon-calendar text-white"></i></a> </div>
+             </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-12 col-xl-6">
+          <div class="card bg-pattern-warning ">
+            <div class="card-body">
+              <div class="media">
+               <div class="media-body text-left">
+                <h4 class="text-white "></h4>
+                <a href="user.php?url=tulis_catatan">
+                <center><span class="text-white"><h4 class="text-white">Tulis Catatan Perjalanan</h4></span></center>
+              </div>
+               <div class="align-self-center w-circle-icon rounded-circle bg-contrast">
+               <a href="user.php?url=tulis_catatan"> <i class="icon-plus text-white"></i></a></div>
+            </div>
+            </div>
+          </div>
+        </div>
+        
+       <?php 
+        
+      }?> 
 		  </div>
         </div>
       </div>

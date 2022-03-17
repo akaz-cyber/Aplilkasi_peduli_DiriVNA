@@ -10,14 +10,12 @@
              <div class="card-body">
 			 
 			 <form action="simpan_catatan.php" method="POST">
-			 
 			    <div class="form-group row">
 				  <label for="basic-input" class="col-sm-3 col-form-label">Tanggal</label>
 				  <div class="col-sm-9">
-					<input name="tanggal" type="date" id="basic-input" class="form-control" placeholder="Masukan Tanggal" required>
+					<input name="tanggal" type="date" id="basic-input" min="<?= date('Y'); ?>" class="form-control" placeholder="Masukan Tanggal" required>
 				  </div>
 				</div>
-				
                 <div class="form-group row">
 				  <label for="basic-input" class="col-sm-3 col-form-label">Jam</label>
 				  <div class="col-sm-9">
