@@ -4,13 +4,9 @@ $year = $_POST['tanggal'];
 $getOnlyear = date('Y', strtotime($year)); // TAHUN
 $dateNow = date('Y');
 if ($getOnlyear < $dateNow) {
-    echo "
-    <script>
-    alert('Tahun tidak boleh kurang ');
-    window.location.assign('user.php?url=tulis_catatan');
-    </script>
-    ";
-    die;
+$_SESSION['error'] = 'Imputan Tahun Terlalu lampu '; //ini berfungsi jika validasi Tanggal Error akan menampilkan Tahun Tidak boleh Kurang 
+header('Location: user.php?url=tulis_catatan');  //ini berfungsi agar setelah validasi tanggal salah akan di redirect ke halaman tulisan catatan
+die;
 }
 $nik          = $_SESSION['nik'];
 $nama_lengkap = $_SESSION['nama_lengkap'];
@@ -28,8 +24,6 @@ fwrite($file,$format);
 
 //menutup file 
 fclose($file);
+$_SESSION['success'] = 'Catatan berhasil di simpan';//jika catatan berhasil di simpan akan ada sweet alert seperti ini 
+header('Location: user.php?url=catatan_perjalanan'); // ini berfungsi agar bisa redirect ke halaman catatatn perjalanan
 ?>
-<script text="text/javascript">
-    alert('Data Catatan Tersimpan !!');
-    window.location.assign('user.php?url=catatan_perjalanan');
-</script>

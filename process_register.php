@@ -1,18 +1,16 @@
 <?php
 error_reporting(0);
+session_start();
 $nik = $_POST['nik'];
 $nama_lengkap =$_POST['nama_lengkap'];
-if (strlen($nik) < 16) {
-  echo "<script>
-  alert('Nik tidak boleh kurang dari 16 angka!!');
-  window.location.assign('register.php'); 
-</script>";die;
-}else if (strlen($nik)>16){
-  echo "<script>
-  alert('Nik tidak boleh lebih dari 16 angka!!');
-  window.location.assign('register.php');
- </script>";die;
-} //validsai nik agar 16 huruf
+
+
+if(strlen($nik) != 16){
+ 
+  $_SESSION['error'] = 'Nik harus 16 angka';
+  header("location: register.php"); die;
+}
+
 
 //mengcek nik apakah sudah terproses
 $data = file("config.txt",FILE_IGNORE_NEW_LINES); // menjadikan file config.txt ini menjadi array
@@ -23,11 +21,10 @@ foreach($data as $value){
      }
 }
 
-if($c){ //jika nik terdaftar ?>
-  <script type="text/javascript">
-      alert('Maaf Nik yang anda gunakan sudah terdaftar!!');
-      window.location.assign('register.php');
-  </script>
+if($c){ //jika nik terdaftar 
+  $_SESSION['error'] = 'Maaf Nik Sudah Terdaftar!!';
+  header("location: register.php"); 
+?>
 <?php }else{//jika data tidak temukan
   $format = "\n$nik|$nama_lengkap";
 
@@ -35,11 +32,10 @@ if($c){ //jika nik terdaftar ?>
   fwrite($file, $format);
 
   fclose($file);
+  $_SESSION['success'] = 'Pendaftaran berhasil';
+  header("location: index.php");
   ?>
- <script type="text/javascript">
-      alert('Pendaftaran Suksess!!');
-      window.location.assign('index.php');
-</script>  
+
 <?php
 
 }

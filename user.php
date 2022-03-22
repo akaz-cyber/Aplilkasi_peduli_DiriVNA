@@ -149,7 +149,7 @@ if(empty($_SESSION['nik'])){ ?>
            }else{?>
             <!-- echo "<h4><center>Selamat Datang ".$_SESSION['nama_lengkap']. " Di Aplikasi Catatan Perjalanan";  -->
              <?php 
-             echo "<h4><center><img src='assets/images/icon.png' width='70' height='70'/>Selamat Datang ".$_SESSION['nama_lengkap']. " Di Aplikasi Catatan Perjalanan<img src='assets/images/icon.png' width='70' height='70'/>";
+             echo "<h4><center><img src='assets/images/icon.png' width='70' height='70'/>Selamat Datang ".$_SESSION['nama_lengkap']. " Di Aplikasi Catatan Perjalanan";
              ?>  
                  
     
@@ -241,6 +241,34 @@ if(empty($_SESSION['nik'])){ ?>
   <script src="assets/plugins/bootstrap-datatable/js/buttons.html5.min.js"></script>
   <script src="assets/plugins/bootstrap-datatable/js/buttons.print.min.js"></script>
   <script src="assets/plugins/bootstrap-datatable/js/buttons.colVis.min.js"></script>
+ <!--sweet alert-->
+  <!-- <script src="assets/plugins/alerts-boxes/js/sweetalert.min.js"></script> -->
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> <!-- script ini untuk memanggil sweetalert -->
+	<?php  
+	if (isset($_SESSION['error'])) { ?>
+		<?php
+		$pesan = $_SESSION['error'];
+		?>
+		<script>
+			var pesan = "<?= $pesan; ?>";
+			swal("Gagal!", pesan, "error");
+		</script>
+	<?php
+		unset($_SESSION['error']);
+	} ?>
+  	<?php
+	if (isset($_SESSION['success'])) { ?>
+		<?php
+		$pesan = $_SESSION['success'];
+		?>
+		<script>
+			var pesan = "<?= $pesan; ?>";
+			swal("Berhasil!", pesan, "success");
+		</script>
+	<?php
+		unset($_SESSION['success']);
+	} ?>
+
 
     <script>
      $(document).ready(function() {
