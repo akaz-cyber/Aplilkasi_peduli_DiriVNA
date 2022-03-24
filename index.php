@@ -29,7 +29,7 @@
 		<div class="card-body">
 		 <div class="card-content p-2">
 		 	<div class="text-center">
-		 		<img src="assets/images/icon.png">
+		 		<img src="assets/images/icon1.png " width="40%" height="40%">
 		 	</div>
 		  <div class="card-title text-uppercase text-center py-3">Masuk - Catatan Perjalanan</div>
 		    <form method="POST" action="process_login.php">

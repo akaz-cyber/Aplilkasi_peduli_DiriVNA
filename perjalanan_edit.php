@@ -37,6 +37,8 @@
                         <td>
                        <a href="?url=edit_catatan&id_catatan=<?= $a['0']?>"class="btn btn-outline-primary waves-effect waves-light m-1">
                        <i class="fa fa-edit"></i> </a>
+                       <a href="delete.php?id_catatan=<?= $a['0']?>"id="btn-hapus" class="btn btn-outline-danger waves-effect waves-light m-1">
+                       <i class="fa fa-trash"></i> </a>
                         </td>
                     </tr>
                     <?php }} ?>

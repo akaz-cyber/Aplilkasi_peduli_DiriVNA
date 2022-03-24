@@ -8,6 +8,7 @@ $_SESSION['error'] = 'Imputan Tahun Terlalu lampu '; //ini berfungsi jika valida
 header('Location: user.php?url=tulis_catatan');  //ini berfungsi agar setelah validasi tanggal salah akan di redirect ke halaman tulisan catatan
 die;
 }
+
 $nik          = $_SESSION['nik'];
 $nama_lengkap = $_SESSION['nama_lengkap'];
 $tanggal      = $_POST['tanggal'];

@@ -230,6 +230,9 @@ if(empty($_SESSION['nik'])){ ?>
   <script src="assets/js/sidebar-menu.js"></script>
   <!-- Custom scripts -->
   <script src="assets/js/app-script.js"></script>
+    <!-- Chart JS -->
+    <script src="assets/plugins/Chart.js/Chart.min.js"></script>
+  <script src="assets/plugins/Chart.js/chartjs-script.js"></script>
   <!--Data Tables js-->
   <script src="assets/plugins/bootstrap-datatable/js/jquery.dataTables.min.js"></script>
   <script src="assets/plugins/bootstrap-datatable/js/dataTables.bootstrap4.min.js"></script>
@@ -268,7 +271,24 @@ if(empty($_SESSION['nik'])){ ?>
 	<?php
 		unset($_SESSION['success']);
 	} ?>
-
+<script>
+    $(document).on('click','#btn-hapus',function(e){
+      e.preventDefault();
+       var link = $(this).attr('href');
+        swal({
+        title: "Apakah Anda yakin?",
+          text: "Data Catatan Perjalanan Akan di Hapus",
+          icon: "warning",
+          buttons: true,
+          dangerMode: true,
+      })
+      .then((willDelete) => {
+        if (willDelete) {
+           window.location = link;
+        }
+         });
+          })
+</script>
 
     <script>
      $(document).ready(function() {
