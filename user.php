@@ -81,6 +81,12 @@ if(empty($_SESSION['nik'])){ ?>
       </li>
       <br>
       <li>
+        <a href="?url=informasi_covid" class="waves-effect">
+          <i class="icon-info  "></i> <span>Infomasi Harian Covid</span>
+        </a>
+      </li>
+      <br>
+      <li>
         <a href="logout.php" class="waves-effect">
           <i class="icon-power  "></i> <span>Keluar</span>
         </a>
@@ -141,6 +147,10 @@ if(empty($_SESSION['nik'])){ ?>
 
                         case 'edit_catatan':
                           include'edit_catatan.php';
+                          break;
+
+                        case 'informasi_covid':
+                          include'informasi_covid.php';
                           break;
                    default:
                        echo "<h3>Halaman Tidak Ditemukan</h3>";
