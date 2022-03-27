@@ -69,7 +69,7 @@
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/popper.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
-  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> <!-- script ini untuk memanggil sweetalert -->
+  <script src="assets/plugins/alerts-boxes/js/sweetalert2.js"></script>
   <?php  
   session_start();
 	if (isset($_SESSION['error'])) { ?>

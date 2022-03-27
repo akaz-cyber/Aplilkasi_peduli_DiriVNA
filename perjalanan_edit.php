@@ -33,7 +33,7 @@
                         <td><?= $a['3'];?></td>
                         <td><?= $a['4'];?></td>
                         <td><?= $a['5'];?></td>
-                        <td><?= $a['6'];?></td>
+                        <td><?= $a['6'];?> &#8451</td>
                         <td>
                        <a href="?url=edit_catatan&id_catatan=<?= $a['0']?>"class="btn btn-outline-primary waves-effect waves-light m-1">
                        <i class="fa fa-edit"></i> </a>

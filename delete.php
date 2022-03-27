@@ -20,7 +20,3 @@ file_put_contents('catatan.txt',implode("",$open));
 $_SESSION['success'] = 'Data Catatan Berhasil di hapus'; 
 header('Location: user.php?url=catatan_perjalanan');
 ?>
-<!-- <script text="text/javascript">
-    alert('Data Catatan SUDAH Diubah !!');
-    window.location.assign('user.php?url=catatan_perjalanan');
-</script> -->

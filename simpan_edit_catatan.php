@@ -27,7 +27,3 @@ FILE_put_contents('catatan.txt',$data);
 $_SESSION['success'] = 'Data Catatan Berhasil Di Ubah'; 
 header('Location: user.php?url=catatan_perjalanan');
 ?>
-<!-- <script text="text/javascript">
-    alert('Data Catatan SUDAH Diubah !!');
-    window.location.assign('user.php?url=catatan_perjalanan');
-</script> -->

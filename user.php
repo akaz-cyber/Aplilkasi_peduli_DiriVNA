@@ -81,12 +81,6 @@ if(empty($_SESSION['nik'])){ ?>
       </li>
       <br>
       <li>
-        <a href="?url=informasi_covid" class="waves-effect">
-          <i class="icon-info  "></i> <span>Infomasi Harian Covid</span>
-        </a>
-      </li>
-      <br>
-      <li>
         <a href="logout.php" class="waves-effect">
           <i class="icon-power  "></i> <span>Keluar</span>
         </a>
@@ -147,10 +141,6 @@ if(empty($_SESSION['nik'])){ ?>
 
                         case 'edit_catatan':
                           include'edit_catatan.php';
-                          break;
-
-                        case 'informasi_covid':
-                          include'informasi_covid.php';
                           break;
                    default:
                        echo "<h3>Halaman Tidak Ditemukan</h3>";
@@ -255,8 +245,7 @@ if(empty($_SESSION['nik'])){ ?>
   <script src="assets/plugins/bootstrap-datatable/js/buttons.print.min.js"></script>
   <script src="assets/plugins/bootstrap-datatable/js/buttons.colVis.min.js"></script>
  <!--sweet alert-->
-  <!-- <script src="assets/plugins/alerts-boxes/js/sweetalert.min.js"></script> -->
-  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> <!-- script ini untuk memanggil sweetalert -->
+ <script src="assets/plugins/alerts-boxes/js/sweetalert2.js"></script>
 	<?php  
 	if (isset($_SESSION['error'])) { ?>
 		<?php
