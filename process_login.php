@@ -16,9 +16,4 @@ if(in_array($format,$file)){//mencati format yang ada di dalam TXT
 $_SESSION['error'] = 'Nik Atau Username Salah'; 
 header('Location: index.php');
 ?>
-
- <!-- <script type="text/javascript">window
-  alert('Nik Atau Nama lengkap salah!!')
-  window.location.assign('index.php')
- </script> -->
 <?php }

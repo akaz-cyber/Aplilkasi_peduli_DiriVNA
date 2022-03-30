@@ -57,7 +57,7 @@ if(empty($_SESSION['nik'])){ ?>
       <li class="sidebar-header"></li>
       <li>
         <a href="user.php" class="waves-effect">
-          <i class="icon-home"></i> <span>Dashboard</span>
+          <i class="icon-home"></i> <span>Beranda</span>
         </a>
       </li>
       <br>
@@ -297,7 +297,7 @@ if(empty($_SESSION['nik'])){ ?>
 
        var table = $('#example').DataTable( {
         lengthChange: false,
-        buttons: [  'excel', 'pdf', 'print', ]
+        buttons: [  'excel', 'print', ]
       } );
  
      table.buttons().container()

@@ -1,6 +1,6 @@
 <h4 class="page-title">Catatan Perjalanan</h4>
 	<ol class="breadcrumb">
-	<li class="breadcrumb-item"><a href="user.php">Dashboard</a></li>
+	<li class="breadcrumb-item"><a href="user.php">Beranda</a></li>
 	<li class="breadcrumb-item active" aria-current="page">Tulis Catatan</li>
 </ol>
 <div class="row">
