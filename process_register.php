@@ -11,6 +11,11 @@ if(strlen($nik) != 16){
   header("location: register.php"); die;
 }
 
+if(strlen($nama_lengkap) < 2){
+  $_SESSION['error'] = 'Nama Lengkap tidak valid';
+  header("location: register.php"); die;
+}
+
 
 //mengcek nik apakah sudah terproses
 $data = file("config.txt",FILE_IGNORE_NEW_LINES); // menjadikan file config.txt ini menjadi array
