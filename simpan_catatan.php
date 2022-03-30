@@ -4,7 +4,7 @@ $year = $_POST['tanggal'];
 $getOnlyear = date('Y', strtotime($year)); // TAHUN
 $dateNow = date('Y');
 if ($getOnlyear < $dateNow) {
-$_SESSION['error'] = 'Imputan Tahun Terlalu lampu '; //ini berfungsi jika validasi Tanggal Error akan menampilkan Tahun Tidak boleh Kurang 
+$_SESSION['error'] = 'data Tahun Terlalu lampu '; //ini berfungsi jika validasi Tanggal Error akan menampilkan Tahun Tidak boleh Kurang 
 header('Location: user.php?url=tulis_catatan');  //ini berfungsi agar setelah validasi tanggal salah akan di redirect ke halaman tulisan catatan
 die;
 }
