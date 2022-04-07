@@ -9,7 +9,7 @@ $file = file('config.txt',FILE_IGNORE_NEW_LINES);
 if(in_array($format,$file)){//mencati format yang ada di dalam TXT
        $_SESSION['nik'] = $nik;
        $_SESSION['nama_lengkap'] = $nama_lengkap;
-
+       $_SESSION['success'] = 'Berhasil Login'; 
        header("location:user.php");
 }else{//jika data tidak di temukan 
 
