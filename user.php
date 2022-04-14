@@ -158,7 +158,7 @@ if(empty($_SESSION['nik'])){ ?>
           <!-- halaman utama Dashboard -->
       <div class="row mt-3">
         <div class="col-12 col-lg-12 col-xl-6">
-          <div class="card bg-pattern-primary">
+          <div class="card bg-pattern-success">
             <div class="card-body">
               <div class="media">
               <div class="media-body text-left">
@@ -188,6 +188,27 @@ if(empty($_SESSION['nik'])){ ?>
             </div>
           </div>
         </div>
+          
+       
+        <div class="col-12 col-lg-12 col-xl-12">
+          <div class="text-center">
+          <div class="card bg-pattern-primary ">
+            <div class="card-body">
+              <div class="media">
+               <div class="media-body text-left">
+                <h4 class="text-white "></h4>
+                <a href="user.php?url=perjalanan_edit">
+                <center><span class="text-white"><h4 class="text-white">Edit Catatan</h4></span></center>
+              </div>
+               <div class="align-self-center w-circle-icon rounded-circle bg-contrast">
+               <a href="user.php?url=perjalanan_edit"> <i class="icon-note text-white"></i></a></div>
+            </div>
+            </div>
+          </div>
+          </div>
+        </div>
+
+        
         
        <?php 
         
